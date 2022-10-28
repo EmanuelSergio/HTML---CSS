@@ -1,0 +1,45 @@
+
+<!--
+
+value="https://exemplo.com" deixa o valor ja no input, podendo ser alterado
+
+minlenght  coloca uma quantidade mínima de caracteres
+maxlenght coloca uma quantidade máxima de caracteres
+
+size: tamanho no campo
+
+spellcheck false ou true : habilita a verificação ortográfica para este input
+
+-->
+
+<form action="">
+
+<input type="url" placeholder="https://exemplo.com"
+required 
+>
+
+<button type="submit">Enviar</button>
+
+
+</form>
+
+<h3>--------------------------------------</h3>
+
+
+<form action="">
+
+    <datalist id="listaurl">
+        <option>https://exemplo.com.br</option>
+        <option>https://emanuel.com.br</option>
+    </datalist>
+
+    <input type="url" placeholder="https://exemplo.com.br"
+    required pattern=".*\.com\.br\.*" title="somente dominios .com.br" 
+    list="listaurl" spellcheck="false"
+    >
+    
+    <button type="submit">Enviar</button>
+    
+    
+    </form>
+

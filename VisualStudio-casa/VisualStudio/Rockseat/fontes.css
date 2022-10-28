@@ -1,0 +1,17 @@
+ 
+ p{
+
+font-family: 'Times New Roman', Times, sans-serif;
+font-weight: normal; /*tamanho da fonte (peso)*/
+font-style: italic;
+font-size: 30px;
+font-stretch: condensed;
+letter-spacing: 0px;/*espaço entre letras*/
+word-spacing: 1px; /*espaço entre palavras*/
+line-height: 1.5; /*espaço entre linhas*/
+text-transform: lowercase; /*editas as palavras(nesse deixei todas as letras minúsculas*/
+text-decoration: double aqua; /*colocar linhas nas palavras*/
+text-align: center;
+text-shadow: 2px 1px red; /*colocar sombra no texto*/
+
+}

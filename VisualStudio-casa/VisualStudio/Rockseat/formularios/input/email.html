@@ -1,0 +1,92 @@
+
+<!--
+
+placeholder: escrita no input
+readonly/disable
+value
+
+required: deve ser preenchido obrigatoriamente
+
+multiple: pode ser colocado 1 ou mais email separados por vírgulas
+
+minlenght / maxlenght: quantidades minimas e maximas de caracteres
+
+size: tamnho que vai ficar a barra (medida em caracteres)
+
+pattern: regula o campo para ter validações
+
+list: sugestoes de emails
+
+-->
+
+
+<form action="">
+
+<input type="email" placeholder="tururu">
+
+<button type="submit">enviar</button>
+
+</form>
+ 
+<h3>--------------------------------------</h3>
+
+<h2>multiple</h2>
+
+<form action="">
+
+    <input type="email" placeholder="email" multiple>
+    
+    <button type="submit">enviar</button>
+    
+    </form>
+     
+    <h3>--------------------------------------</h3>
+
+    <h2>size</h2>
+
+    <form action="">
+
+        <input type="email" placeholder="tururu"
+        size="3">
+        
+        <button type="submit">enviar</button>
+        
+        </form>
+         
+    <h3>--------------------------------------</h3>
+
+    <h2>pattern</h2>
+
+    <form action="">
+
+        <input type="email" placeholder="tururu"
+        pattern=".+@gmail\.com\.br"
+        title="apenas gmails são aceitos">
+        
+        <button type="submit">enviar</button>
+        
+        </form>
+         
+        <h3>--------------------------------------</h3>
+
+        <h2>list</h2>
+
+    <form action="">
+
+
+        <datalist id="emaillist">
+            <option>emanuelsergiogirardi@gmail.com</option>
+            <option>arletegusava@gmail.com</option>
+            <option>johanaarlete@gmail.com</option>
+        </datalist>
+
+        <input type="email" placeholder="email"
+        list="emaillist">
+        
+        <button type="submit">enviar</button>
+        
+        </form>
+         
+        <h3>--------------------------------------</h3>
+
+        

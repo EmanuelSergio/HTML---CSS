@@ -1,0 +1,196 @@
+
+*{
+    margin: 0;
+}
+
+h1{
+    font-size: 30px;
+    color: #F4EDE8;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  table{
+    width:100%;
+    table-layout: fixed;
+    border-radius: 10px;
+    
+  }
+  .tbl-header{
+    background-color: #312E38;
+    border-radius: 10px 10px 0px 0px;
+
+   }
+  .tbl-content{
+    height:500px;
+    overflow-x:auto;
+    margin-top: 0px;
+    background-color:#3E3B47
+;
+    border-radius:  0px 0px 10px 10px;
+  }
+  th{
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    color: #F4EDE8;
+    text-transform: uppercase;
+  }
+  td{
+    padding: 15px;
+    text-align: left;
+    vertical-align:middle;
+    font-weight: 300;
+    font-size: 12px;
+    color: #F4EDE8;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+  }
+  
+  
+  /* demo styles */
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+  body{
+    
+    
+    background-color: #232129;
+    font-family: 'Roboto Slab', serif;
+  }
+  section{
+    margin: 50px;
+
+    
+  }
+   
+  
+  /* for custom scrollbar for webkit browser*/
+  
+  ::-webkit-scrollbar {
+    background-color:#232129 ;  
+    width: 6px;
+  } 
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  } 
+
+  ::-webkit-scrollbar-thumb {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+      
+      border-radius: 10px;
+
+  }
+
+
+  /*navbar*/
+
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  ul,
+  li {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    margin-bottom: 0;
+    
+  }
+  svg {
+    width: 31px;
+    height: 31px;
+    margin: 0px 5px;
+    transition: 0.45s ease-in-out all;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+    min-width: 100px;
+    position: relative;
+    text-decoration:none;
+    color:#F4EDE8;
+  }
+  a:before {
+    position: absolute;
+    content: "";
+    top: 60%;
+    left: 46%;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background: #F4EDE8;
+    transform: scale(0);
+    transform-origin: 50% 50%;
+    transition: 0.45s ease-in-out all;
+  }
+  nav {
+    padding: 20px 20px 0px 0px;
+    background:#312E38;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.15);
+    
+  }
+  span {
+    transition: 0.45s ease-in-out all;
+    position: absolute;
+    top: 10px;
+  }
+  .text-container,
+  .svg-container {
+    display: flex;
+    justify-content: center;
+    -webkit-mask-image: url("https://kasperdebruyne.be/img/mask2.svg");
+    -webkit-mask-composite: source-out;
+    -webkit-mask-position: 0px -14px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100px 40px;
+    margin: 0%;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    transition: 0.45s ease-in-out all;
+  }
+  .text-container {
+    transition-delay: 0.01s;
+  }
+  .svg-container {
+    -webkit-mask-size: 100px 60px;
+    margin: 0;
+    -webkit-mask-position: 0px 0px;
+    transform:translateZ(0); /* Firefox  */
+  }
+  a:hover .svg-container {
+    transform: translateY(-24px);
+    -webkit-mask-position: 0px -40px;
+  }
+  a:hover:before {
+    transform: scale(1);
+    transition-delay: 0.15s;
+  }
+  a:hover span {
+    transform: translateY(-10px);
+  }
+  a:hover .text-container {
+    transform: translateY(-34px);
+    -webkit-mask-position: 0px 0px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
